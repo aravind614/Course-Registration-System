@@ -1,0 +1,17 @@
+# Java / Spring Boot
+backend/target/
+*.class
+
+# IntelliJ
+backend/.idea/
+*.iml
+
+# VS Code
+frontend/.vscode/
+
+# Environment / secrets
+.env
+*.env
+
+# OS
+.DS_Store

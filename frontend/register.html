@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Heading */
+h1 {
+    color: #22c55e;
+    font-size: 42px;
+    margin-bottom: 35px;
+    text-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+}
+
+/* Form Card */
+form {
+    margin: auto;
+    padding: 35px;
+    width: 450px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Inputs and Select */
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+    </style>
+   
+</head>
+<body>
+    <h1>KickStart With An Exciting Course</h1>
+
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name"><br><br>
+
+         <label for="email">Enter your Emailid</label>
+        <input type="text" name="emailid"><br><br>
+
+         <label for="courseName">Choose a Course Name</label>
+       <select name="courseName" id="course">
+        <option value="Java essential">Java Essential</option>
+        <option value="Python for ML">Python for ML</option>
+        <option value="Python">Python</option>
+        <option value="Spring Boot">Spring Boot</option>
+       </select>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

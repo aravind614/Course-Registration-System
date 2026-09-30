@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="myscript.js"></script>
+     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        }
+
+        table {
+            width: 700px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        th {
+            background-color: lightblue;
+            color: #222;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+
+        tbody tr:hover {
+            background-color: #dbeafe;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" border="1">
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Course id</th>
+            <th width="150">Course Name</th>
+            <th width="150">Trainer</th>
+            <th width="'150">Duration</th>
+        </tr>
+
+        <tbody id="coursetable" align="center"></tbody>
+
+        <script type="text/javascript">
+            window.onload=function(){
+                showCourse();
+            }
+        </script>
+    </table>
+</body>
+</html>
